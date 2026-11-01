@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es" data-theme="cronica">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Crónicas del Aventurero</title>
+  <meta name="description" content="Mejora tus hábitos como en un RPG de fantasía medieval.">
+  <meta name="theme-color" content="#121a2b">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Crónicas">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud" class="hud"></header>
+    <main id="view" class="view"></main>
+    <nav id="nav" class="nav">
+      <button data-action="tab" data-tab="misiones"><span>📜</span>Misiones</button>
+      <button data-action="tab" data-tab="heroe"><span>🛡️</span>Héroe</button>
+      <button data-action="tab" data-tab="jefe"><span>🐉</span>Jefe</button>
+      <button data-action="tab" data-tab="tienda"><span>🪙</span>Tienda</button>
+      <button data-action="tab" data-tab="gremio"><span>🏰</span>Gremio</button>
+    </nav>
+  </div>
+  <div id="modal" class="modal"></div>
+  <div id="toasts" class="toasts"></div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <script src="js/avatar.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
